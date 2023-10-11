@@ -18,15 +18,15 @@ import io.agora.rtc2.video.VideoCanvas
 class MainActivity : AppCompatActivity() {
 
 
-    private val appId = "5fb926599aeb4ba391c29247cc3b6f71"
+    private val appId = "c6c74a5b7ac548699943912ed4d26408"
 
-    var appCertificate = "b5065fbfa5ed4d8aba0c25de974502b1"
+    var appCertificate = "0d85fa677d424be9b0488e7c97b5a3b1"
     var expirationTimeInSeconds = 3600
     private val channelName = "papayacoders"
 
-    private var token : String? = null
-//    private val token =
-//        "007eJxTYDDp3SWzb5uimNhB/V+mL5lvLmFi/xjmUq06+8V/76bHa+YoMJimJVkamZlaWiamJpkkJRpbGiYbWRqZmCcnGyeZpZkbKnYuTG4IZGRgnyjPxMgAgSA+D0NBYkFiZWJyfkpqUTEDAwAi+yGx"
+//    private var token : String? = null
+    private var token =
+        "007eJxTYBBq6/kf7eA58WjR18VLb2joB3b+XXbL5P+f+7fm1uybw5ahwJBslmxukmiaZJ6YbGpiYWZpaWlibGlolJpikmJkZmJgUXRMLbUhkJFB28CGhZEBAkF8HoaCxILEysTk/JTUomIGBgARwCPu"
 
     private val uid = 0
     private var isJoined = false
