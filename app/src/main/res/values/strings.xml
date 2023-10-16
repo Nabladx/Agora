@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Agora</string>
+    <string name="you">You</string>
+    <string name="partner">Partner</string>
+    <string name="join">Join</string>
+    <string name="leave">Leave</string>
 </resources>

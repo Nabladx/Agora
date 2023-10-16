@@ -10,31 +10,59 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <TextView
+            android:id="@+id/TextViewId1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:text="@string/you"
+            android:textColor="#000000">
+        </TextView>
         <FrameLayout
             android:id="@+id/local_video_view_container"
-            android:layout_width="320dp"
-            android:layout_height="240dp"
+            android:layout_below="@+id/TextViewId1"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
             android:layout_centerHorizontal="true"
-            android:layout_margin="6dp"
-            android:background="@android:color/darker_gray" />
-
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="6dp"
+            android:background="@android:color/darker_gray">
+        </FrameLayout>
+        <TextView
+            android:id="@+id/TextViewId2"
+            android:layout_below="@+id/local_video_view_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000000"
+            android:text="@string/partner">
+        </TextView>
         <FrameLayout
             android:id="@+id/remote_video_view_container"
-            android:layout_width="320dp"
-            android:layout_height="240dp"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
             android:layout_below="@+id/local_video_view_container"
             android:layout_centerHorizontal="true"
-            android:layout_margin="6dp"
-            android:background="@android:color/darker_gray" />
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="6dp"
+            android:background="@android:color/darker_gray">
+    </FrameLayout>
+
         <Button
             android:id="@+id/JoinButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/remote_video_view_container"
             android:layout_alignStart="@id/remote_video_view_container"
-            android:layout_marginTop="40dp"
+            android:layout_marginStart="-135dp"
+            android:layout_marginTop="105dp"
             android:onClick="joinChannel"
-            android:text="Join" />
+            android:text="@string/join" />
 
         <Button
             android:id="@+id/LeaveButton"
@@ -42,8 +70,9 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/remote_video_view_container"
             android:layout_alignEnd="@id/remote_video_view_container"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="105dp"
+            android:layout_marginEnd="-135dp"
             android:onClick="leaveChannel"
-            android:text="Leave" />
+            android:text="@string/leave" />
     </RelativeLayout>
 </ScrollView>

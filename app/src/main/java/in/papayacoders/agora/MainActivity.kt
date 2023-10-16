@@ -74,7 +74,7 @@ class MainActivity : AppCompatActivity() {
             config.mEventHandler = mRtcEventHandler
             agoraEngine = RtcEngine.create(config)
             // By default, the video module is disabled, call enableVideo to enable it.
-            agoraEngine!!.enableVideo()
+            agoraEngine!!.disableVideo()
         } catch (e: Exception) {
             showMessage(e.toString())
         }
